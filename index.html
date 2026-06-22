@@ -15,9 +15,9 @@
   </head>
   <body>
     <main class="generator">
-      <h1 class="generator__title">Gerador de senhas</h1>
+      <h1 class="generator__title">Gerador de Senhas</h1>
 
-      <form action="" class="generator__title" novalidate>
+      <form action="" class="generator__form" novalidate>
         <div class="generator__display">
           <input
             type="text"
@@ -50,7 +50,7 @@
               class="generator__length-counter"
               aria-live="polite"
             >
-              0
+              10
             </span>
           </div>
           <input
@@ -113,15 +113,17 @@
             </div>
           </div>
 
-          <div class="strength-rating" aria-live="polite">
-            <span class="strength-rating__title">Força</span>
-            <div class="strength-rating__display">
-              <span class="strength-rating__text">Média</span>
-              <div class="strength-rating__bars" aria-hidden="true">
-                <span class="strength-rating__bar"></span>
-                <span class="strength-rating__bar"></span>
-                <span class="strength-rating__bar"></span>
-                <span class="strength-rating__bar"></span>
+          <div class="generator__strength" aria-live="polite">
+            <span class="generator__strength-title">Força</span>
+            <div class="generator__strength-display">
+              <span id="strength-text" class="generator__strength-text">
+                Média
+              </span>
+              <div class="generator__strength-bars" aria-hidden="true">
+                <span class="generator__strength-bar"></span>
+                <span class="generator__strength-bar"></span>
+                <span class="generator__strength-bar"></span>
+                <span class="generator__strength-bar"></span>
               </div>
             </div>
           </div>
