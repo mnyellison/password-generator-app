@@ -1,0 +1,101 @@
+.generator__length-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(
+    var(--spacing-100),
+    1.79vw + 0.14rem,
+    var(--spacing-200)
+  );
+}
+
+.generator__label {
+  font-size: var(--text-fluid-sm);
+  line-height: var(--line-height-md);
+}
+
+.generator__length-counter {
+  color: var(--color-green-200);
+  font-size: var(--text-fluid-xl);
+  line-height: var(--line-height-xl);
+}
+
+.generator__slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1.75rem;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: var(--spacing-400);
+}
+
+.generator__slider:focus {
+  outline: none;
+}
+
+/* --- estilização para Chrome, Edge e Safari --- */
+.generator__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--color-grey-200);
+  border: 2px solid var(--color-grey-200);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  margin-top: -0.625rem;
+}
+
+/* --- estilização para o Firefox --- */
+.generator__slider::-moz-range-thumb {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--color-grey-200);
+  border: 2px solid var(--color-grey-200);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  cursor: pointer;
+}
+
+/* --- barra no Chrome, Edge e Safari --- */
+.generator__slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.5rem;
+  /* background-color: var(--color-grey-850); */
+  background: linear-gradient(
+    to right,
+    var(--color-green-200) 0%,
+    var(--color-green-200) var(--slider-progress, 0%),
+    var(--color-grey-850) var(--slider-progress, 0%),
+    var(--color-grey-850) 100%
+  );
+}
+
+/* --- barra no Firefox --- */
+.generator__slider::-moz-range-track {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--color-grey-850);
+}
+
+.generator__slider::-moz-range-progress {
+  background-color: var(--color-green-200);
+  height: 0.5rem;
+}
+
+/* hover no Chrome/Safari */
+.generator__slider:hover::-webkit-slider-thumb {
+  background-color: var(--color-grey-850);
+  border-color: var(--color-green-200);
+}
+
+/* hover no Firefox */
+.generator__slider:hover::-moz-range-thumb {
+  background-color: var(--color-grey-850);
+  border-color: var(--color-green-200);
+}

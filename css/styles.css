@@ -1,7 +1,7 @@
 @import url("./base/reset.css");
 @import url("./base/tokens.css");
 
-@import url("./components/text-field.css");
+@import url("./components/password-display.css");
 @import url("./components/slider.css");
 @import url("./components/checkbox.css");
 @import url("./components/strength.css");

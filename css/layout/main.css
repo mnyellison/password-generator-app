@@ -5,7 +5,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 var(--spacing-200);
+  padding: var(--spacing-300) var(--spacing-200);
+}
+
+.generator {
+  width: 100%;
+  max-width: clamp(21.44rem, 43.97vw + 12.64rem, 33.75rem);
 }
 
 .generator__title {
@@ -18,4 +23,17 @@ body {
     3.57vw + 0.29rem,
     var(--spacing-400)
   );
+}
+
+.generator__settings {
+  background-color: var(--color-grey-800);
+  /* clamp vertical (16px a 24px) | clamp horizontal (16px a 32px) */
+  padding: clamp(var(--spacing-200), 1.79vw + 0.64rem, var(--spacing-300))
+    clamp(var(--spacing-200), 3.57vw + 0.29rem, var(--spacing-400));
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: var(--spacing-700) 0;
+  }
 }

@@ -1,0 +1,23 @@
+.generator__submit-btn {
+  width: 100%;
+  background-color: var(--color-green-200);
+  border: 2px solid transparent;
+  color: var(--color-grey-800);
+  text-transform: uppercase;
+  font-size: var(--text-fluid-sm);
+  line-height: var(--line-height-sm);
+  padding: clamp(1rem, 1.79vw + 0.64rem, 1.5rem);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+  outline: none;
+}
+
+.generator__submit-btn:hover,
+.generator__submit-btn:focus-visible {
+  background-color: var(--color-grey-800);
+  border-color: var(--color-green-200);
+  color: var(--color-green-200);
+}
