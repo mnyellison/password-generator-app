@@ -1,0 +1,53 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-grey-950: #08070b;
+  --color-grey-900: #14131b;
+  --color-grey-850: #18171f;
+  --color-grey-800: #24232c;
+  --color-grey-700: #54535b;
+  --color-grey-600: #817d92;
+  --color-grey-200: #e6e5ea;
+
+  --color-green-200: #a4ffaf;
+  --color-yellow-300: #f8cd65;
+  --color-orange-400: #fb7c58;
+  --color-red-500: #f64a4a;
+
+  --color-gradient: linear-gradient(
+    90deg,
+    var(--color-grey-900) 0%,
+    var(--color-grey-950) 100%
+  );
+
+  --font-primary: "JetBrains Mono", monospace;
+
+  /* cresce de 16px (1rem) até 18px (1.125rem) */
+  --text-fluid-sm: clamp(1rem, 0.45vw + 0.91rem, 1.125rem);
+  --line-height-sm: 1.25;
+
+  /* cresce de 16px (1rem) até 24px (1.5rem) */
+  --text-fluid-md: clamp(1rem, 1.79vw + 0.64rem, 1.5rem);
+  --line-height-md: 1.33;
+
+  /* cresce de 18px (1.125rem) até 24px (1.5rem) */
+  --text-fluid-lg: clamp(1.125rem, 1.34vw + 0.86rem, 1.5rem);
+  --line-height-lg: 1.33;
+
+  /* cresce de 24px (1.5rem) até 32px (2rem) */
+  --text-fluid-xl: clamp(1.5rem, 1.79vw + 1.14rem, 2rem);
+  --line-height-xl: 1.31;
+
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1300: 6.5rem; /* 104px */
+  --spacing-1600: 8rem; /* 128px */
+  --spacing-2000: 10rem; /* 160px */
+  --spacing-2200: 11rem; /* 176px */
+  --spacing-2300: 11.5rem; /* 184px */
+}

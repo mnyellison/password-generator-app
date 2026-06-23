@@ -1,0 +1,21 @@
+body {
+  background-image: var(--color-gradient);
+  color: var(--color-grey-200);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--spacing-200);
+}
+
+.generator__title {
+  color: var(--color-grey-600);
+  font-size: var(--text-fluid-md);
+  line-height: var(--line-height-md);
+  text-align: center;
+  margin-bottom: clamp(
+    var(--spacing-200),
+    3.57vw + 0.29rem,
+    var(--spacing-400)
+  );
+}
