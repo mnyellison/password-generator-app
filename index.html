@@ -19,6 +19,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a16984c516.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main class="generator">
@@ -123,7 +129,7 @@
           <div class="generator__strength" aria-live="polite">
             <span class="generator__strength-title">Força</span>
             <div class="generator__strength-display">
-              <span id="strength-text" class="generator__strength-text">
+              <span id="strength-text" class="generator__strength-text hidden">
                 Média
               </span>
               <div class="generator__strength-bars" aria-hidden="true">
@@ -134,16 +140,12 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <button type="submit" class="generator__submit-btn">
-          Gerar
-          <img
-            src="./assets/images/icon-arrow-right.svg"
-            alt=""
-            aria-hidden="true"
-          />
-        </button>
+          <button type="submit" class="generator__submit-btn">
+            Gerar
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </form>
     </main>
   </body>
